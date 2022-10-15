@@ -1,18 +1,18 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
-# compiled output
+# Compiled output
 /dist
 /tmp
-/.tmp
-/p1workspace/dist/
+/out-tsc
+/bazel-out
 
-# dependencies
-node_modules
+# Node
+/node_modules
+npm-debug.log
+yarn-error.log
 
 # IDEs and editors
-.idea
-!.idea/codeStyles
-!.idea/jsLinters
+.idea/
 .project
 .classpath
 .c9/
@@ -20,89 +20,23 @@ node_modules
 .settings/
 *.sublime-workspace
 
-# IDE - VSCode
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
+# Visual Studio Code
+../.vscode/*
+!../.vscode/settings.json
+!../.vscode/tasks.json
+!../.vscode/launch.json
+!../.vscode/extensions.json
+.history/*
 
-*.iml
-
-# misc
-.angular
-/.sass-cache
+# Miscellaneous
+/.angular/cache
+.sass-cache/
 /connect.lock
-/coverage/*
+/coverage
 /libpeerconnection.log
-npm-debug.log
 testem.log
 /typings
 
-# tests
-/.reports/**/*.*
-/test-reports/**
-!style.css
-.tmp
-local.log
-allure-results/
-allure-results-real-devices/
-allure-report/
-
-# screenshots from apps (old situation)
-/apps/p1-it/screenshots/
-/apps/portal-it/screenshots/
-/apps/p1-e2e/screenshots/
-/apps/p1-smoke/screenshots/
-**/screenshots/diff/
-**/screenshots/actual/
-**/screenshots/tests/
-!**/screenshots/baseline/
-
-## screenshots from new situation (seperate test projects with `it` en `vr`)
-**/screenshots/*
-
-!**/screenshots/vr
-**/screenshots/vr/*
-!**/screenshots/vr/baseline
-
-!**/screenshots/it
-**/screenshots/it/*
-!**/screenshots/it/baseline
-
-test-reports
-
-#System Files
+# System files
 .DS_Store
 Thumbs.db
-/node/
-**/target/**
-/.vscode/
-/.vscode/settings.json
-
-#Tools
-BrowserStackLocal
-/BuildPipeline/frontend/target/
-/yarn-error.log
-
-# SonarQube
-.scannerwork
-
-# Local Mvn settings
-.mvn
-
-# Angular nx cache
-.nx
-
-# Docker
-docker/*/dist
-docker/functional-tests/tsconfig.base.json
-docker/functional-tests/apps
-docker/functional-tests/libs
-
-# Storybook
-**/.storybook/documentation.json
-
-
-#Local env variables
-env.local
