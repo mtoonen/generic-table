@@ -1,0 +1,22 @@
+<div class='p1-table'>
+  <table cdk-table [dataSource]='dataSource'>
+    <ng-container *ngFor='let column of columns' cdkColumnDef='{{column.name}}'>
+      <th cdk-header-cell *cdkHeaderCellDef>
+        <span (click)="changeSort(column.name)" >
+        <!--eb-icon *ngIf='column.sortable'
+                 [class.flip]='isAscending(column.name)'
+                 [class.inactive]="currentSortColumn !== column.name"
+                 name='arrow-down-with-stick'>
+        </eb-icon-->
+        {{column.title}}
+          </span>
+      </th>
+      <td cdk-cell *cdkCellDef='let element'>
+        <ng-container *ngTemplateOutlet='column.template;context:{data: element[column.name]}'>as</ng-container>
+      </td>
+    </ng-container>
+
+    <tr cdk-header-row *cdkHeaderRowDef='this.displayColumns'></tr>
+    <tr cdk-row *cdkRowDef='let row; columns: displayColumns;'></tr>
+  </table>
+</div>

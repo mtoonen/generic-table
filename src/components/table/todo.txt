@@ -1,0 +1,9 @@
+sorting
+  generic sorting functions
+  define function per column
+layout
+Filtering
+searching
+pagination
+horizontaal kunnen scrollen
+  een kolom vast kunnen zetten
