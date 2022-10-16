@@ -1,8 +1,212 @@
-th {
-  text-align: left;
-}
+@import 'variables';
+@import 'mixins';
 
 .p1-table {
-  border-top-left-radius: 0;
-  margin: 0;
+  background: #fff;
+  border-radius: $p1-radius-small;
+  font-size: 1.8rem;
+  margin: $p1-gutter-size;
+  overflow: auto;
+
+  // cross component solution
+  .select-student .button-area {
+    padding: 1.6rem 0 !important;
+  }
+
+  table {
+    width: 100%;
+
+    th {
+      vertical-align: middle;
+    }
+
+    td {
+      vertical-align: top;
+      background: #fff;
+    }
+
+    th,
+    td {
+      padding: $p1-gutter-size;
+      text-align: left;
+
+      // td th util classes
+      &.p1-table-bold {
+        font-weight: 600;
+      }
+
+      &.p1-table-primary-column {
+        min-width: 30rem;
+        width: 30rem;
+      }
+
+      &.p1-table-primary-column-large {
+        min-width: 60rem;
+        width: 60rem;
+      }
+
+      &.p1-table-column-medium {
+        min-width: 20rem;
+        width: 20rem;
+      }
+
+      &.p1-table-spacer {
+        width: 100%;
+      }
+
+      &.p1-table-separator {
+        border-left: $p1-table-border;
+      }
+
+      &.p1-table-center {
+        text-align: center;
+      }
+
+      &.p1-table-right {
+        text-align: right;
+      }
+
+      &.p1-table-sort {
+        cursor: pointer;
+        font-weight: 600;
+        white-space: nowrap;
+      }
+
+      &.p1-table-nowrap {
+        white-space: nowrap;
+      }
+
+      &.p1-table-narrow {
+        padding: $p1-gutter-size-small ($p1-gutter-size-small * 0.5);
+      }
+
+      &.p1-table-no-padding {
+        padding: 0;
+      }
+
+      &.p1-table-pointer {
+        cursor: pointer;
+      }
+
+      &.p1-table-vertical-align-middle {
+        vertical-align: middle;
+      }
+    }
+
+    // hyperlinks
+    a {
+      color: $p1-content-color;
+    }
+
+    // borders
+    thead tr:first-child {
+      th,
+      td {
+        border-bottom: $p1-table-border;
+      }
+
+      th {
+        white-space: nowrap;
+      }
+    }
+
+    tbody tr {
+      overflow: hidden;
+
+      &.p1-table-subtitle {
+        font-size: 1.6rem;
+        font-weight: 600;
+        text-transform: uppercase;
+
+        td {
+          padding: 0.8rem 1.6rem;
+        }
+      }
+
+      th,
+      td {
+        border-bottom: $p1-table-border;
+      }
+
+      &:last-child td,
+      &:last-child th {
+        border-bottom: none;
+      }
+
+      // link-button
+      .p1-table-link-button {
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        text-decoration: none;
+
+        span {
+          flex: 1;
+        }
+      }
+
+      // link-button with extra click space
+      .p1-table-no-padding .p1-table-link-button {
+        padding: $p1-gutter-size;
+      }
+    }
+  }
+
+  // table icons
+  eb-icon {
+    @include p1-size(2.4rem);
+    fill: $p1-content-color;
+    min-width: 2.4rem;
+    transition: transform 0.1s ease-in-out;
+    vertical-align: top;
+
+    &.flip {
+      transform: rotate(180deg);
+    }
+
+    &.inactive {
+      fill: $p1-disabled-color;
+    }
+
+    &.header-icon-with-text {
+      padding-right: $p1-gutter-size-small * 0.5;
+    }
+
+    &.align-bottom {
+      vertical-align: bottom;
+    }
+  }
+
+  p1-task-icon {
+    @include p1-size(2.4rem);
+  }
+
+  // sticky columns
+  &.p1-table-fixed-first-column {
+    tbody tr {
+      border-top: none;
+    }
+
+    tbody td {
+      border-top: $p1-table-border;
+    }
+
+    td:first-child,
+    th:first-child {
+      background: #fff;
+      border-bottom-left-radius: $p1-radius-small;
+      border-top-left-radius: $p1-radius-small;
+      left: 0;
+      position: sticky;
+      z-index: 2;
+    }
+
+    &.scrolled {
+      td:first-child,
+      th:first-child {
+        border-top-color: #fff;
+        box-shadow: 0.3rem 0.3rem 0.6rem 0 rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
 }

@@ -1,0 +1,1156 @@
+{
+    "pipes": [],
+    "interfaces": [
+        {
+            "name": "PeriodicElement",
+            "id": "interface-PeriodicElement-ee4193045a1f82c040fedb2f369e3140b47d8a035703b10a07e0e0828ba1f8d41cd3e203990d316608751fc9db7b96550e6bceb7693a848a7830ccd7d39d3613",
+            "file": "src/components/table/data.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface PeriodicElement {\n  name: string;\n  position: number;\n  weight: number;\n  symbol: string;\n}\nexport const ELEMENT_DATA: PeriodicElement[] = [\n  { position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H' },\n  { position: 2, name: 'Helium', weight: 4.0026, symbol: 'He' },\n  { position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li' },\n  { position: 4, name: 'Beryllium', weight: 9.0122, symbol: 'Be' },\n  { position: 5, name: 'Boron', weight: 10.811, symbol: 'B' },\n  { position: 6, name: 'Carbon', weight: 12.0107, symbol: 'C' },\n  { position: 7, name: 'Nitrogen', weight: 14.0067, symbol: 'N' },\n  { position: 8, name: 'Oxygen', weight: 15.9994, symbol: 'O' },\n  { position: 9, name: 'Fluorine', weight: 18.9984, symbol: 'F' },\n  { position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne' }\n];\nexport interface ProgressPillScore {\n  ok:number;\n  good:number;\n  bad:number;\n}\nexport interface StudentResult{\n  name: string;\n  id: number;\n  grade: ProgressPillScore;\n}\nexport const CHILDREN_DATA: StudentResult[] = [\n  {id: 1, name: \"Pietje\", grade:{ ok: 1, good:2, bad: 3}},\n  {id: 2, name: \"Jantje\", grade:{ ok:2, good:3, bad: 3}},\n  {id: 3, name: \"Klaasje\", grade:{ ok: 3, good:0, bad: 0}},\n  {id: 4, name: \"Huubje\", grade:{ ok: 4, good:12, bad: 3}},\n];\n",
+            "properties": [
+                {
+                    "name": "name",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 3
+                },
+                {
+                    "name": "position",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 4
+                },
+                {
+                    "name": "symbol",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 6
+                },
+                {
+                    "name": "weight",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 5
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 165,
+            "methods": []
+        },
+        {
+            "name": "ProgressPillScore",
+            "id": "interface-ProgressPillScore-ee4193045a1f82c040fedb2f369e3140b47d8a035703b10a07e0e0828ba1f8d41cd3e203990d316608751fc9db7b96550e6bceb7693a848a7830ccd7d39d3613",
+            "file": "src/components/table/data.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface PeriodicElement {\n  name: string;\n  position: number;\n  weight: number;\n  symbol: string;\n}\nexport const ELEMENT_DATA: PeriodicElement[] = [\n  { position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H' },\n  { position: 2, name: 'Helium', weight: 4.0026, symbol: 'He' },\n  { position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li' },\n  { position: 4, name: 'Beryllium', weight: 9.0122, symbol: 'Be' },\n  { position: 5, name: 'Boron', weight: 10.811, symbol: 'B' },\n  { position: 6, name: 'Carbon', weight: 12.0107, symbol: 'C' },\n  { position: 7, name: 'Nitrogen', weight: 14.0067, symbol: 'N' },\n  { position: 8, name: 'Oxygen', weight: 15.9994, symbol: 'O' },\n  { position: 9, name: 'Fluorine', weight: 18.9984, symbol: 'F' },\n  { position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne' }\n];\nexport interface ProgressPillScore {\n  ok:number;\n  good:number;\n  bad:number;\n}\nexport interface StudentResult{\n  name: string;\n  id: number;\n  grade: ProgressPillScore;\n}\nexport const CHILDREN_DATA: StudentResult[] = [\n  {id: 1, name: \"Pietje\", grade:{ ok: 1, good:2, bad: 3}},\n  {id: 2, name: \"Jantje\", grade:{ ok:2, good:3, bad: 3}},\n  {id: 3, name: \"Klaasje\", grade:{ ok: 3, good:0, bad: 0}},\n  {id: 4, name: \"Huubje\", grade:{ ok: 4, good:12, bad: 3}},\n];\n",
+            "properties": [
+                {
+                    "name": "bad",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 23
+                },
+                {
+                    "name": "good",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 22
+                },
+                {
+                    "name": "ok",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 21
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 165,
+            "methods": []
+        },
+        {
+            "name": "StudentResult",
+            "id": "interface-StudentResult-ee4193045a1f82c040fedb2f369e3140b47d8a035703b10a07e0e0828ba1f8d41cd3e203990d316608751fc9db7b96550e6bceb7693a848a7830ccd7d39d3613",
+            "file": "src/components/table/data.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface PeriodicElement {\n  name: string;\n  position: number;\n  weight: number;\n  symbol: string;\n}\nexport const ELEMENT_DATA: PeriodicElement[] = [\n  { position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H' },\n  { position: 2, name: 'Helium', weight: 4.0026, symbol: 'He' },\n  { position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li' },\n  { position: 4, name: 'Beryllium', weight: 9.0122, symbol: 'Be' },\n  { position: 5, name: 'Boron', weight: 10.811, symbol: 'B' },\n  { position: 6, name: 'Carbon', weight: 12.0107, symbol: 'C' },\n  { position: 7, name: 'Nitrogen', weight: 14.0067, symbol: 'N' },\n  { position: 8, name: 'Oxygen', weight: 15.9994, symbol: 'O' },\n  { position: 9, name: 'Fluorine', weight: 18.9984, symbol: 'F' },\n  { position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne' }\n];\nexport interface ProgressPillScore {\n  ok:number;\n  good:number;\n  bad:number;\n}\nexport interface StudentResult{\n  name: string;\n  id: number;\n  grade: ProgressPillScore;\n}\nexport const CHILDREN_DATA: StudentResult[] = [\n  {id: 1, name: \"Pietje\", grade:{ ok: 1, good:2, bad: 3}},\n  {id: 2, name: \"Jantje\", grade:{ ok:2, good:3, bad: 3}},\n  {id: 3, name: \"Klaasje\", grade:{ ok: 3, good:0, bad: 0}},\n  {id: 4, name: \"Huubje\", grade:{ ok: 4, good:12, bad: 3}},\n];\n",
+            "properties": [
+                {
+                    "name": "grade",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "ProgressPillScore",
+                    "optional": false,
+                    "description": "",
+                    "line": 28
+                },
+                {
+                    "name": "id",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 27
+                },
+                {
+                    "name": "name",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 26
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 165,
+            "methods": []
+        }
+    ],
+    "injectables": [],
+    "guards": [],
+    "interceptors": [],
+    "classes": [
+        {
+            "name": "ExampleDataSource",
+            "id": "class-ExampleDataSource-aaee28c47ca8589e9ce3ce2465d6bbf087d7d8e1a09fbad35c8907f2443903823c0f3b2e32394224617473c3f06b2626098aa24a15c528e813bfc911221b8fec",
+            "file": "src/components/table/table/table.component.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "class",
+            "sourceCode": "import { DataSource } from '@angular/cdk/collections';\nimport { AfterContentInit, Component, ContentChildren, Input, OnInit, QueryList } from '@angular/core';\n\nimport { BehaviorSubject, Observable } from 'rxjs';\n\nimport { ColumnDirective } from '../column/column.directive';\n\n@Component({\n  selector: 'p1-table',\n  templateUrl: './table.component.html',\n  styleUrls: ['./table.component.scss']\n})\nexport class TableComponent<T> implements OnInit, AfterContentInit {\n\n  @Input()\n  data: T[];\n\n  @ContentChildren(ColumnDirective)\n  content: QueryList<ColumnDirective>;\n  columns: ColumnDirective[];\n\n  dataSource: ExampleDataSource<T>;\n  displayColumns: string[];\n\n  currentSortColumn: string;\n  sortAscending: Map<string, boolean> = new Map<string, boolean>();\n\n  constructor() {\n  }\n\n  ngOnInit(): void {\n    this.dataSource = new ExampleDataSource(this.data);\n  }\n\n  ngAfterContentInit(): void {\n    this.columns = this.content.toArray();\n    this.displayColumns = this.content.map(value => value.name);\n    this.content.forEach((item) => this.sortAscending.set(item.name, false));\n  }\n\n  changeSort(column: string): void {\n    this.currentSortColumn = column;\n    this.sortAscending.set(column, !this.sortAscending.get(column));\n  }\n\n  isAscending(column: string): boolean{\n    return this.sortAscending.get(column) || false;\n  }\n}\n\n/**\n * Data source to provide what data should be rendered in the table. Note that the data source\n * can retrieve its data in any way. In this case, the data source is provided a reference\n * to a common data base, ExampleDatabase. It is not the data source's responsibility to manage\n * the underlying data. Instead, it only needs to take the data and send the table exactly what\n * should be rendered.\n */\nexport class ExampleDataSource<T> extends DataSource<T> {\n  /** Stream of data that is provided to the table. */\n  data: BehaviorSubject<T[]>;\n\n  constructor(_data: T[]) {\n    super();\n    this.data = new BehaviorSubject<T[]>(_data);\n  }\n\n  /** Connect function called by the table to retrieve one stream containing the data to render. */\n  connect(): Observable<T[]> {\n    return this.data;\n  }\n\n  disconnect() {\n  }\n}\n",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "_data",
+                        "type": "T[]",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "line": 60,
+                "jsdoctags": [
+                    {
+                        "name": "_data",
+                        "type": "T[]",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "data",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "BehaviorSubject<T[]>",
+                    "optional": false,
+                    "description": "<p>Stream of data that is provided to the table.</p>\n",
+                    "line": 60,
+                    "rawdescription": "\nStream of data that is provided to the table."
+                }
+            ],
+            "description": "<p>Data source to provide what data should be rendered in the table. Note that the data source\ncan retrieve its data in any way. In this case, the data source is provided a reference\nto a common data base, ExampleDatabase. It is not the data source&#39;s responsibility to manage\nthe underlying data. Instead, it only needs to take the data and send the table exactly what\nshould be rendered.</p>\n",
+            "rawdescription": "\n\nData source to provide what data should be rendered in the table. Note that the data source\ncan retrieve its data in any way. In this case, the data source is provided a reference\nto a common data base, ExampleDatabase. It is not the data source's responsibility to manage\nthe underlying data. Instead, it only needs to take the data and send the table exactly what\nshould be rendered.\n",
+            "methods": [
+                {
+                    "name": "connect",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "Observable<T[]>",
+                    "typeParameters": [],
+                    "line": 68,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\nConnect function called by the table to retrieve one stream containing the data to render.",
+                    "description": "<p>Connect function called by the table to retrieve one stream containing the data to render.</p>\n"
+                },
+                {
+                    "name": "disconnect",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 72,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "indexSignatures": [],
+            "extends": "DataSource",
+            "inputsClass": [],
+            "outputsClass": [],
+            "hostBindings": [],
+            "hostListeners": []
+        }
+    ],
+    "directives": [
+        {
+            "name": "ColumnDirective",
+            "id": "directive-ColumnDirective-0df722a6a6c2612627fd5483e6d0e3146e8d2f3f87bb3c43e9e46df122159be9d13376cccb2147fafe092dd933e2dae07b7c67fa4195edbfb2956d89ce40ed17",
+            "file": "src/components/table/column/column.directive.ts",
+            "type": "directive",
+            "description": "",
+            "rawdescription": "\n",
+            "sourceCode": "import { Directive, Input, OnInit, TemplateRef } from '@angular/core';\n\n@Directive({\n  selector: '[p1Column]'\n})\nexport class ColumnDirective implements OnInit {\n\n  @Input()\n  name: string;\n  @Input()\n  title?: string;\n  @Input()\n  sortable?: boolean = false;\n\n  constructor(public template: TemplateRef<any>) { }\n\n  ngOnInit(): void {\n    this.title = this.title ?? this.name;\n  }\n}\n",
+            "selector": "[p1Column]",
+            "providers": [],
+            "inputsClass": [
+                {
+                    "name": "name",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 9,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "sortable",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 13,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "title",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 11,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "propertiesClass": [
+                {
+                    "name": "template",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "TemplateRef<any>",
+                    "optional": false,
+                    "description": "",
+                    "line": 15,
+                    "modifierKind": [
+                        123
+                    ]
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 17,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "implements": [
+                "OnInit"
+            ],
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "template",
+                        "type": "TemplateRef<any>",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "line": 13,
+                "jsdoctags": [
+                    {
+                        "name": "template",
+                        "type": "TemplateRef<any>",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "components": [
+        {
+            "name": "AppComponent",
+            "id": "component-AppComponent-1643790e33c2e59af1af27a2f56c2de2f81fed3fb7ccfc2d897a908e6ce0c3c23ad97bb3d70fbff3f71c0cf7c64f0eaef681e214e7224a8495f6c1223e778b5e",
+            "file": "src/app/app.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-root",
+            "styleUrls": [
+                "./app.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./app.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "title",
+                    "defaultValue": "'generic-table'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 9
+                }
+            ],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-root',\n  templateUrl: './app.component.html',\n  styleUrls: ['./app.component.scss']\n})\nexport class AppComponent {\n  title = 'generic-table';\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./app.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "templateData": ""
+        },
+        {
+            "name": "TableComponent",
+            "id": "component-TableComponent-aaee28c47ca8589e9ce3ce2465d6bbf087d7d8e1a09fbad35c8907f2443903823c0f3b2e32394224617473c3f06b2626098aa24a15c528e813bfc911221b8fec",
+            "file": "src/components/table/table/table.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "p1-table",
+            "styleUrls": [
+                "./table.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./table.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "data",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 16,
+                    "type": "T[]",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "columns",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "ColumnDirective[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 20
+                },
+                {
+                    "name": "content",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "QueryList<ColumnDirective>",
+                    "optional": false,
+                    "description": "",
+                    "line": 19,
+                    "decorators": [
+                        {
+                            "name": "ContentChildren",
+                            "stringifiedArguments": "ColumnDirective"
+                        }
+                    ]
+                },
+                {
+                    "name": "currentSortColumn",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 25
+                },
+                {
+                    "name": "dataSource",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "ExampleDataSource<T>",
+                    "optional": false,
+                    "description": "",
+                    "line": 22
+                },
+                {
+                    "name": "displayColumns",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 23
+                },
+                {
+                    "name": "sortAscending",
+                    "defaultValue": "new Map<string, boolean>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Map<string | boolean>",
+                    "optional": false,
+                    "description": "",
+                    "line": 26
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "changeSort",
+                    "args": [
+                        {
+                            "name": "column",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 41,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "column",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "isAscending",
+                    "args": [
+                        {
+                            "name": "column",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "boolean",
+                    "typeParameters": [],
+                    "line": 46,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "column",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "ngAfterContentInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 35,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 31,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { DataSource } from '@angular/cdk/collections';\nimport { AfterContentInit, Component, ContentChildren, Input, OnInit, QueryList } from '@angular/core';\n\nimport { BehaviorSubject, Observable } from 'rxjs';\n\nimport { ColumnDirective } from '../column/column.directive';\n\n@Component({\n  selector: 'p1-table',\n  templateUrl: './table.component.html',\n  styleUrls: ['./table.component.scss']\n})\nexport class TableComponent<T> implements OnInit, AfterContentInit {\n\n  @Input()\n  data: T[];\n\n  @ContentChildren(ColumnDirective)\n  content: QueryList<ColumnDirective>;\n  columns: ColumnDirective[];\n\n  dataSource: ExampleDataSource<T>;\n  displayColumns: string[];\n\n  currentSortColumn: string;\n  sortAscending: Map<string, boolean> = new Map<string, boolean>();\n\n  constructor() {\n  }\n\n  ngOnInit(): void {\n    this.dataSource = new ExampleDataSource(this.data);\n  }\n\n  ngAfterContentInit(): void {\n    this.columns = this.content.toArray();\n    this.displayColumns = this.content.map(value => value.name);\n    this.content.forEach((item) => this.sortAscending.set(item.name, false));\n  }\n\n  changeSort(column: string): void {\n    this.currentSortColumn = column;\n    this.sortAscending.set(column, !this.sortAscending.get(column));\n  }\n\n  isAscending(column: string): boolean{\n    return this.sortAscending.get(column) || false;\n  }\n}\n\n/**\n * Data source to provide what data should be rendered in the table. Note that the data source\n * can retrieve its data in any way. In this case, the data source is provided a reference\n * to a common data base, ExampleDatabase. It is not the data source's responsibility to manage\n * the underlying data. Instead, it only needs to take the data and send the table exactly what\n * should be rendered.\n */\nexport class ExampleDataSource<T> extends DataSource<T> {\n  /** Stream of data that is provided to the table. */\n  data: BehaviorSubject<T[]>;\n\n  constructor(_data: T[]) {\n    super();\n    this.data = new BehaviorSubject<T[]>(_data);\n  }\n\n  /** Connect function called by the table to retrieve one stream containing the data to render. */\n  connect(): Observable<T[]> {\n    return this.data;\n  }\n\n  disconnect() {\n  }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "@import 'variables';\n\nth {\n  text-align: left;\n}\n\n.p1-table {\n  border-radius: $p1-gutter-size-small $p1-gutter-size-small 0 0;\n  margin: 0;\n  padding: 0;\n  width: 100%;\n\n  tr {\n    height: 6rem;\n\n    td.name {\n      padding-left: 0;\n\n      .inner {\n        display: flex;\n        justify-content: space-between;\n      }\n    }\n\n    th.title {\n      font-weight: 600;\n      padding-left: 0;\n    }\n\n    .checkbox {\n      margin-right: 1.3rem;\n      width: 1rem;\n    }\n  }\n\n  .status {\n    display: flex;\n    justify-content: center;\n    padding: 0 $p1-gutter-size-small;\n\n    &.active {\n      background-color: $p1-active-period-color;\n      color: $p1-white-color;\n    }\n\n    &.inactive {\n      color: #000;\n      opacity: 0.3;\n    }\n\n    span {\n      font-size: 1.5rem;\n      font-stretch: normal;\n      letter-spacing: normal;\n      line-height: 2;\n    }\n  }\n}\n",
+                    "styleUrl": "./table.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 26
+            },
+            "implements": [
+                "OnInit",
+                "AfterContentInit"
+            ],
+            "templateData": "<div class='p1-table'>\n  <table cdk-table [dataSource]='dataSource'>\n    <ng-container *ngFor='let column of columns' cdkColumnDef='{{column.name}}'>\n      <th cdk-header-cell *cdkHeaderCellDef>\n        <span (click)=\"changeSort(column.name)\" >\n        <!--eb-icon *ngIf='column.sortable'\n                 [class.flip]='isAscending(column.name)'\n                 [class.inactive]=\"currentSortColumn !== column.name\"\n                 name='arrow-down-with-stick'>\n        </eb-icon-->\n        {{column.title}}\n          </span>\n      </th>\n      <td cdk-cell *cdkCellDef='let element'>\n        <ng-container *ngTemplateOutlet='column.template;context:{data: element[column.name]}'>as</ng-container>\n      </td>\n    </ng-container>\n\n    <tr cdk-header-row *cdkHeaderRowDef='this.displayColumns'></tr>\n    <tr cdk-row *cdkRowDef='let row; columns: displayColumns;'></tr>\n  </table>\n</div>\n"
+        }
+    ],
+    "modules": [
+        {
+            "name": "AppModule",
+            "id": "module-AppModule-2ec58e7a32463b9b6cd970cb31e08e29029a47873b1b978b2bb334fc7975f6f5b3557f06f1d8edb8d9117c1bc37b26d4301c2a5e8ccced6f4a56dde5c6a98af4",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/app.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { BrowserModule } from '@angular/platform-browser';\n\nimport { AppComponent } from './app.component';\n\n@NgModule({\n  declarations: [\n    AppComponent\n  ],\n  imports: [\n    BrowserModule\n  ],\n  providers: [],\n  bootstrap: [AppComponent]\n})\nexport class AppModule { }\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "AppComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": [
+                        {
+                            "name": "AppComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "ComponentsModule",
+            "id": "module-ComponentsModule-28cc13558480f2e99470ec74f7f2cf14e8f1fa1a49fc67dfaabe9547bdec7c3f247d58e9f8cecc5aeb6ae463a81e70ca530370864b58b5931a3ae7b3c054c90a",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/components/components.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { CommonModule } from '@angular/common';\n\n\n\n@NgModule({\n  declarations: [],\n  imports: [\n    CommonModule\n  ]\n})\nexport class ComponentsModule { }\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": []
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "TableModule",
+            "id": "module-TableModule-9caa33914f68ad02c3cb29e22c70dbdf7e74c01d7001ac9070c8cd304aa936c6b0a4ed62453e6675f98b6c7766d64cd7290527eb930f7ce1dea129fc16af9374",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/components/table/table.module.ts",
+            "methods": [],
+            "sourceCode": "import { CdkTableModule } from '@angular/cdk/table';\nimport { CommonModule } from '@angular/common';\nimport { NgModule } from '@angular/core';\n\n\nimport { ColumnDirective } from './column/column.directive';\nimport { TableComponent } from './table/table.component';\n\n\n@NgModule({\n  declarations: [\n    TableComponent,\n    ColumnDirective,\n  ],\n  imports: [\n    CommonModule,\n    CdkTableModule\n  ],\n  exports: [\n    TableComponent,\n    ColumnDirective,\n  ]\n})\nexport class TableModule { }\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "ColumnDirective"
+                        },
+                        {
+                            "name": "TableComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": [
+                        {
+                            "name": "ColumnDirective"
+                        },
+                        {
+                            "name": "TableComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        }
+    ],
+    "miscellaneous": {
+        "variables": [
+            {
+                "name": "CHILDREN_DATA",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/components/table/data.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "StudentResult[]",
+                "defaultValue": "[\n  {id: 1, name: \"Pietje\", grade:{ ok: 1, good:2, bad: 3}},\n  {id: 2, name: \"Jantje\", grade:{ ok:2, good:3, bad: 3}},\n  {id: 3, name: \"Klaasje\", grade:{ ok: 3, good:0, bad: 0}},\n  {id: 4, name: \"Huubje\", grade:{ ok: 4, good:12, bad: 3}},\n]"
+            },
+            {
+                "name": "context",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/test.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
+            },
+            {
+                "name": "ELEMENT_DATA",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/components/table/data.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "PeriodicElement[]",
+                "defaultValue": "[\n  { position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H' },\n  { position: 2, name: 'Helium', weight: 4.0026, symbol: 'He' },\n  { position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li' },\n  { position: 4, name: 'Beryllium', weight: 9.0122, symbol: 'Be' },\n  { position: 5, name: 'Boron', weight: 10.811, symbol: 'B' },\n  { position: 6, name: 'Carbon', weight: 12.0107, symbol: 'C' },\n  { position: 7, name: 'Nitrogen', weight: 14.0067, symbol: 'N' },\n  { position: 8, name: 'Oxygen', weight: 15.9994, symbol: 'O' },\n  { position: 9, name: 'Fluorine', weight: 18.9984, symbol: 'F' },\n  { position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne' }\n]"
+            },
+            {
+                "name": "environment",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/environments/environment.prod.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\n  production: true\n}"
+            },
+            {
+                "name": "environment",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/environments/environment.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\n  production: false\n}"
+            },
+            {
+                "name": "nonDefaultCell",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/components/table/table.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<TableComponent<StudentResult>>",
+                "defaultValue": "(args: TableComponent<StudentResult>) => ({\n  props: args,\n  template: `\n<p1-table  [data]='data' >\n  <ng-template p1Column name='id' sortable='true' title='Identifier' let-data='data'>{{data}}</ng-template>\n  <ng-template p1Column name='name' sortable='true' title='Name' let-data='data'>{{data}}</ng-template>\n  <ng-template p1Column name='grade' sortable='true' title='Score' let-data='data'><p1-progress-pill [score]='data'></p1-progress-pill></ng-template>\n</p1-table>\n`\n})"
+            },
+            {
+                "name": "nonDefaultCellType",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/components/table/table.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "nonDefaultCell.bind({})"
+            },
+            {
+                "name": "require",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/test.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "literal type"
+            },
+            {
+                "name": "simple",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/components/table/table.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<TableComponent<PeriodicElement>>",
+                "defaultValue": "(args: TableComponent<PeriodicElement>) => ({\n  props: args,\n  template: `\n<p1-table  [data]='data' >\n  <ng-template p1Column name='position' title='Position' let-data='data'>{{data}}</ng-template>\n  <ng-template p1Column name='name' title='Name' let-data='data'>{{data}}</ng-template>\n  <ng-template p1Column name='weight' title='Weight' let-data='data'>{{data}}</ng-template>\n  <ng-template p1Column name='symbol' title='Symbol' let-data='data'>{{data}}</ng-template>\n</p1-table>\n`\n})"
+            },
+            {
+                "name": "simpleTable4Columns",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/components/table/table.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "simple.bind({})"
+            },
+            {
+                "name": "sortable",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/components/table/table.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<TableComponent<PeriodicElement>>",
+                "defaultValue": "(args: TableComponent<PeriodicElement>) => ({\n  props: args,\n  template: `\n<p1-table  [data]='data' >\n  <ng-template p1Column name='position' title='Position' let-data='data'>{{data}}</ng-template>\n  <ng-template p1Column name='name' sortable='true' title='Name' let-data='data'>{{data}}</ng-template>\n  <ng-template p1Column name='weight' sortable='true' title='Weight' let-data='data'>{{data}}</ng-template>\n  <ng-template p1Column name='symbol' title='Symbol' let-data='data'>{{data}}</ng-template>\n</p1-table>\n`\n})"
+            },
+            {
+                "name": "sortableColumns",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/components/table/table.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "sortable.bind({})"
+            }
+        ],
+        "functions": [],
+        "typealiases": [],
+        "enumerations": [],
+        "groupedVariables": {
+            "src/components/table/data.ts": [
+                {
+                    "name": "CHILDREN_DATA",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/components/table/data.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "StudentResult[]",
+                    "defaultValue": "[\n  {id: 1, name: \"Pietje\", grade:{ ok: 1, good:2, bad: 3}},\n  {id: 2, name: \"Jantje\", grade:{ ok:2, good:3, bad: 3}},\n  {id: 3, name: \"Klaasje\", grade:{ ok: 3, good:0, bad: 0}},\n  {id: 4, name: \"Huubje\", grade:{ ok: 4, good:12, bad: 3}},\n]"
+                },
+                {
+                    "name": "ELEMENT_DATA",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/components/table/data.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "PeriodicElement[]",
+                    "defaultValue": "[\n  { position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H' },\n  { position: 2, name: 'Helium', weight: 4.0026, symbol: 'He' },\n  { position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li' },\n  { position: 4, name: 'Beryllium', weight: 9.0122, symbol: 'Be' },\n  { position: 5, name: 'Boron', weight: 10.811, symbol: 'B' },\n  { position: 6, name: 'Carbon', weight: 12.0107, symbol: 'C' },\n  { position: 7, name: 'Nitrogen', weight: 14.0067, symbol: 'N' },\n  { position: 8, name: 'Oxygen', weight: 15.9994, symbol: 'O' },\n  { position: 9, name: 'Fluorine', weight: 18.9984, symbol: 'F' },\n  { position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne' }\n]"
+                }
+            ],
+            "src/test.ts": [
+                {
+                    "name": "context",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/test.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
+                },
+                {
+                    "name": "require",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/test.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "literal type"
+                }
+            ],
+            "src/environments/environment.prod.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/environments/environment.prod.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\n  production: true\n}"
+                }
+            ],
+            "src/environments/environment.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/environments/environment.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\n  production: false\n}"
+                }
+            ],
+            "src/components/table/table.component.stories.ts": [
+                {
+                    "name": "nonDefaultCell",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/components/table/table.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<TableComponent<StudentResult>>",
+                    "defaultValue": "(args: TableComponent<StudentResult>) => ({\n  props: args,\n  template: `\n<p1-table  [data]='data' >\n  <ng-template p1Column name='id' sortable='true' title='Identifier' let-data='data'>{{data}}</ng-template>\n  <ng-template p1Column name='name' sortable='true' title='Name' let-data='data'>{{data}}</ng-template>\n  <ng-template p1Column name='grade' sortable='true' title='Score' let-data='data'><p1-progress-pill [score]='data'></p1-progress-pill></ng-template>\n</p1-table>\n`\n})"
+                },
+                {
+                    "name": "nonDefaultCellType",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/components/table/table.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "nonDefaultCell.bind({})"
+                },
+                {
+                    "name": "simple",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/components/table/table.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<TableComponent<PeriodicElement>>",
+                    "defaultValue": "(args: TableComponent<PeriodicElement>) => ({\n  props: args,\n  template: `\n<p1-table  [data]='data' >\n  <ng-template p1Column name='position' title='Position' let-data='data'>{{data}}</ng-template>\n  <ng-template p1Column name='name' title='Name' let-data='data'>{{data}}</ng-template>\n  <ng-template p1Column name='weight' title='Weight' let-data='data'>{{data}}</ng-template>\n  <ng-template p1Column name='symbol' title='Symbol' let-data='data'>{{data}}</ng-template>\n</p1-table>\n`\n})"
+                },
+                {
+                    "name": "simpleTable4Columns",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/components/table/table.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "simple.bind({})"
+                },
+                {
+                    "name": "sortable",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/components/table/table.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<TableComponent<PeriodicElement>>",
+                    "defaultValue": "(args: TableComponent<PeriodicElement>) => ({\n  props: args,\n  template: `\n<p1-table  [data]='data' >\n  <ng-template p1Column name='position' title='Position' let-data='data'>{{data}}</ng-template>\n  <ng-template p1Column name='name' sortable='true' title='Name' let-data='data'>{{data}}</ng-template>\n  <ng-template p1Column name='weight' sortable='true' title='Weight' let-data='data'>{{data}}</ng-template>\n  <ng-template p1Column name='symbol' title='Symbol' let-data='data'>{{data}}</ng-template>\n</p1-table>\n`\n})"
+                },
+                {
+                    "name": "sortableColumns",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/components/table/table.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "sortable.bind({})"
+                }
+            ]
+        },
+        "groupedFunctions": {},
+        "groupedEnumerations": {},
+        "groupedTypeAliases": {}
+    },
+    "routes": [],
+    "coverage": {
+        "count": 3,
+        "status": "low",
+        "files": [
+            {
+                "filePath": "src/app/app.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "AppComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/components/table/column/column.directive.ts",
+                "type": "directive",
+                "linktype": "directive",
+                "name": "ColumnDirective",
+                "coveragePercent": 0,
+                "coverageCount": "0/7",
+                "status": "low"
+            },
+            {
+                "filePath": "src/components/table/data.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "PeriodicElement",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
+                "status": "low"
+            },
+            {
+                "filePath": "src/components/table/data.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "ProgressPillScore",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/components/table/data.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "StudentResult",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/components/table/data.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "CHILDREN_DATA",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/components/table/data.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "ELEMENT_DATA",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/components/table/table.component.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "nonDefaultCell",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/components/table/table.component.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "nonDefaultCellType",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/components/table/table.component.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "simple",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/components/table/table.component.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "simpleTable4Columns",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/components/table/table.component.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "sortable",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/components/table/table.component.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "sortableColumns",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/components/table/table/table.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "TableComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/13",
+                "status": "low"
+            },
+            {
+                "filePath": "src/components/table/table/table.component.ts",
+                "type": "class",
+                "linktype": "classe",
+                "name": "ExampleDataSource",
+                "coveragePercent": 60,
+                "coverageCount": "3/5",
+                "status": "good"
+            },
+            {
+                "filePath": "src/environments/environment.prod.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "environment",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/environments/environment.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "environment",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/test.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "context",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/test.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "require",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            }
+        ]
+    }
+}

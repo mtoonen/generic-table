@@ -1,0 +1,250 @@
+@use 'sass:color';
+
+// typography
+$p1-font-family: 'Open Sans', sans-serif !default;
+$p1-font-family-toddler: 'Arial', 'Verdana', 'Helvetica', sans-serif;
+$p1-font-size: 1.8rem !default;
+$p1-font-size-interactions: 2rem !default;
+$p1-font-size-interactions-big: 3rem !default;
+$p1-font-size-interactions-biggest: 6.5rem;
+$p1-font-size-read-along: 2rem !default;
+$p1-font-size-read-along-big: 2.7rem !default;
+$p1-font-size-read-along-biggest: 3.6rem;
+$p1-font-size-h1: 4rem;
+$p1-font-size-h2: 3rem;
+$p1-font-size-h3: 2.4rem;
+$p1-font-weight-600: 600;
+$p1-font-weight-400: 400;
+$p1-font-weight-300: 300;
+$p1-line-height-interactions: 4.4rem !default;
+$p1-line-height-interactions-big: 5.3rem !default;
+$p1-line-height-interactions-biggest: 9.75rem !default;
+$p1-line-height-read-along: 1.67 !default;
+$p1-font-size-select: 4rem;
+$p1-line-height-select: calc(#{$p1-font-size-select} * 1.75);
+
+// p1 colors
+$p1-primary-color: #0074df !default;
+$p1-secondary-color: #004390 !default;
+$p1-background-color: #e6f1fb !default;
+$p1-important-color: #ff8500 !default;
+$p1-white-color: #fff !default;
+$p1-input-color: #aab3bd !default;
+$p1-lines-color: #e5e8eb !default;
+$p1-content-color: #002f62 !default;
+$p1-interaction-border-color: #83c8ef !default;
+$p1-draggable-drop-shadow: #cdcdcd !default;
+$p1-active-tab-color: #ccd6e0 !default;
+$p1-code-block-background-color: rgba(#000, 0.1) !default;
+$p1-locked-background-color: #f5f6f7;
+
+$p1-btn-default-box-shadow-color: #aab3bd !default;
+$p1-btn-default-border-color: #e5e8eb !default;
+$p1-btn-default-shadow-color: #001e47 !default;
+
+$p1-radio-button-checked: #1678d6 !default;
+
+$p1-split-line-color: #73bede; // not currently listed in Zeplin UI palette
+
+$p1-input-color--readonly: color.adjust($p1-input-color, $lightness: 20%) !default;
+$p1-input-color--example: #e6e9ec !default;
+
+$p1-disabled-color: #aab3bd;
+
+$p1-grid-background-color: #dfeffb !default;
+$p1-grid-border-color: #83c8ef !default;
+$p1-highlight-background-color: #e5e8eb !default;
+$p1-panel-background-color: #f6f6f6 !default;
+
+// feedback colors
+$p1-feedback-default-color: #e5e8eb !default;
+$p1-feedback-correct-color: #46ac00 !default;
+$p1-feedback-correct-transparent-color: rgba(70, 172, 0, 0.1);
+$p1-feedback-incomplete-color: #ff9d00 !default;
+$p1-feedback-incomplete-transparent-color: rgba(255, 157, 0, 0.1) !default;
+$p1-feedback-incorrect-color: #e30a27 !default;
+$p1-feedback-corrected-color: #d2289d !default;
+
+// score colors
+$p1-score-correct-color: #46ac00 !default;
+$p1-score-second-correct-color: #ff9d00 !default;
+$p1-score-third-correct-color: #5d5e60 !default;
+$p1-score-incorrect-color: #e30a27 !default;
+
+// Period colors
+$p1-active-period-color: #46ac00 !default;
+
+// lesson colors
+$p1-classical-lesson-indicator-color: #fcf7b5 !default;
+$p1-substantive-lesson-indicator-color: #dcf4ff !default;
+
+// categorize colors
+$p1-categorize-blue: #0074df;
+$p1-categorize-brown: #8b572a;
+$p1-categorize-green: #7ed321;
+$p1-categorize-pink: #ef07a7;
+$p1-categorize-orange: #ff8500;
+$p1-categorize-red: #ef1b30;
+$p1-categorize-purple: #5217c6;
+$p1-categorize-yellow: #ffec40;
+$p1-categorize-white: #fff;
+
+// buttons
+$p1-btn-generic-padding: 0.2rem 1.9rem;
+$p1-btn-generic-line-height: 3.6rem;
+$p1-btn-generic-border-radius: 99.9rem;
+$p1-btn-generic-transition: 200ms background linear;
+
+$p1-btn-primary-background-color: #0074df;
+$p1-btn-primary-hover-background-color: #006cce;
+$p1-btn-primary-border: 0.2rem solid #0070c2;
+$p1-btn-primary-box-shadow: 0 0.2rem 0 0 #004390;
+$p1-btn-primary-active-background-color: #0065b0;
+$p1-btn-primary-active-border: 0.2rem solid #025997;
+$p1-btn-primary-font-size: 2rem;
+$p1-btn-primary-font-weight: 600;
+$p1-btn-primary-color: #fff;
+
+$p1-btn-secondary-background-color: #004390;
+$p1-btn-secondary-border: 0.2rem solid #002f62;
+$p1-btn-secondary-box-shadow: 0 0.2rem 0 0 #001e47;
+$p1-btn-secondary-font-size: 1.8rem;
+$p1-btn-secondary-font-weight: 600;
+$p1-btn-secondary-color: #fff;
+
+$p1-btn-default-background-color: #fff;
+$p1-btn-default-border: 0.2rem solid $p1-btn-default-border-color;
+$p1-btn-default-box-shadow: 0 0.2rem 0 0 $p1-btn-default-box-shadow-color;
+$p1-btn-default-font-size: 1.8rem;
+$p1-btn-default-font-weight: 600;
+$p1-btn-default-color: #002f62 !default;
+
+// Checkboxes
+$p1-checkbox-border-color: #aab3bd;
+$p1-checkbox-background-color: #fff;
+$p1-checkbox-disabled-background-color: #e5e8eb;
+$p1-checkbox-disabled-border-color: #aab3bd;
+$p1-checkbox-size: 3.2rem;
+
+// Tables
+$p1-eb-table-header-color: #e7f4fb !default;
+$p1-table-border: 0.1rem solid $p1-lines-color;
+$p1-scroll-table-header-row-top-z-index: 10;
+$p1-scroll-table-header-column-z-index: 9;
+$p1-scroll-table-header-top-left-z-index: 11;
+
+// Navbar
+$p1-navbar-font-size: 2rem;
+
+// sizes
+$p1-gutter-size: 1.6rem;
+$p1-gutter-size-small: 0.8rem;
+$p1-radius-small: 0.8rem;
+$p1-radius-large: 1.6rem;
+$p1-ui-border-width: 0.2rem;
+$p1-icon-small: 2.4rem;
+$p1-default-img-max-height-interaction: 8rem;
+$p1-digiboard-toolbar-padding: 7.2rem;
+
+// tools
+$p1-tool-max-width: 56.8rem;
+$p1-tool-inner-max-width: $p1-tool-max-width - (2 * $p1-gutter-size);
+$p1-tools-footer-color: #e5e8eb;
+
+// z-indexes
+$p1-overlay-z-index: 3000;
+$eb-dialog-backdrop-z-index: 2200;
+$p1-spinner-z-index: 2200;
+$p1-cloze-edit-context-z-index: $p1-spinner-z-index - 100;
+$p1-dialog-backdrop-z-index: $eb-dialog-backdrop-z-index;
+$p1-drag-helper-z-index: 2000;
+$p1-reviewer-mode-z-index: 2000;
+$p1-popover-overlay-container-z-index: 1950;
+$p1-draggable-money-z-index: 1820;
+$p1-fullscreen-z-index: 1810;
+$p1-dialog-z-index: $p1-dialog-backdrop-z-index + 100;
+$p1-popover-z-index: $p1-dialog-backdrop-z-index + 50;
+$p1-popover-backdrop-z-index: 1640;
+$p1-video-maximized-z-index: 1600;
+$p1-sidebar-z-index: 1551;
+$eb-video-is-playing-backdrop-z-index: 1550;
+$p1-tool-picker-z-index: 1510;
+$p1-lesson-footer-dialog-z-index: 1900;
+$p1-slide-custom-component-index: $p1-lesson-footer-dialog-z-index;
+$p1-lesson-footer-dialog-overlay-z-index: 1850;
+$p1-horizontal-scrollwrapper-z-index: 1200;
+$p1-tool-z-index: 1100;
+$p1-tool-advice-popover-z-index: 1002;
+$p1-keyboard-popup-z-index: 1001;
+$p1-exercise-z-index: 400;
+$p1-keyboard-z-index: 98;
+
+$p1-drawing-layer-tool-menu-z-index: 1800;
+$p1-drawing-layer-z-index: 100;
+
+// @edubase/frontend
+
+// begin: Used in calculations in efc
+$eb-ui-space-small: 0.5rem;
+$eb-ui-border-width: 0.2rem;
+$eb-ui-space-medium: 1rem;
+$eb-ui-space-large: 1.5rem;
+$eb-connection-lines-width: 6rem;
+$eb-feedback-size: 2.4rem;
+$eb-ui-control-height: 3.6rem;
+// end: Used in calculations in efc
+
+$eb-checkbox-border-radius: 0.8rem;
+$eb-checkbox-icon-size: 1.8rem;
+$eb-checkbox-size: 3.2rem;
+$eb-checkbox-table-size: 2.4rem;
+$eb-cloze-control-height: $p1-line-height-interactions;
+$eb-cloze-text-line-height: 4.4rem;
+$eb-cloze-edit-input-padding: 0 $p1-gutter-size;
+$eb-connection-lines-handle-size: 2rem;
+$eb-editing-line-height: 3rem;
+
+$eb-popover-bg: #fff;
+$eb-popover-color: $p1-content-color;
+$eb-popover-arrow-size: 0.8rem;
+$eb-popover-arrow-offset: 2rem;
+
+$eb-radio-button-icon-size: 1.8rem;
+$eb-radio-button-padding: 0.8rem;
+$eb-radio-button-size: 3.2rem;
+$eb-analogue-clock-control-icon-size: 1rem;
+$eb-analogue-clock-control-size: 2.4rem;
+$eb-digital-clock-control-icon-size: 1rem;
+$eb-digital-clock-control-size: 2.4rem;
+
+$eb-ui-background-backdrop: rgba(0, 0, 0, 0.7);
+$eb-ui-background-light: #fff;
+$eb-ui-background-selection: $p1-primary-color;
+$eb-ui-border-active: $p1-primary-color;
+$eb-ui-border-hover: $p1-input-color;
+$eb-ui-font-primary: $p1-font-family;
+$eb-ui-font-secondary: $p1-font-family;
+$eb-ui-layer-dialog: 30;
+$eb-ui-state-correct: $p1-feedback-correct-color;
+$eb-ui-state-incorrect: $p1-feedback-incorrect-color;
+
+$eb-paragraph-spacing: 2.5rem;
+
+$p1-handle-dots-svg: url('data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNSAyMyIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4NCiAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtODQ2LjAwMDAwMCwgLTQzOC4wMDAwMDApIiBzdHlsZT0iZmlsbDogcmdiYSgyNTUsIDI1NSwgMjU1LCAwLjYpOyI+DQogICAgICAgIDxwYXRoIGQ9Ik04NDguNSw0NDMgQzg0Ny4xMTkyODgsNDQzIDg0Niw0NDEuODgwNzEyIDg0Niw0NDAuNSBDODQ2LDQzOS4xMTkyODggODQ3LjExOTI4OCw0MzggODQ4LjUsNDM4IEM4NDkuODgwNzEyLDQzOCA4NTEsNDM5LjExOTI4OCA4NTEsNDQwLjUgQzg1MSw0NDEuODgwNzEyIDg0OS44ODA3MTIsNDQzIDg0OC41LDQ0MyBaIE04NDguNSw0NTIgQzg0Ny4xMTkyODgsNDUyIDg0Niw0NTAuODgwNzEyIDg0Niw0NDkuNSBDODQ2LDQ0OC4xMTkyODggODQ3LjExOTI4OCw0NDcgODQ4LjUsNDQ3IEM4NDkuODgwNzEyLDQ0NyA4NTEsNDQ4LjExOTI4OCA4NTEsNDQ5LjUgQzg1MSw0NTAuODgwNzEyIDg0OS44ODA3MTIsNDUyIDg0OC41LDQ1MiBaIE04NDguNSw0NjEgQzg0Ny4xMTkyODgsNDYxIDg0Niw0NTkuODgwNzEyIDg0Niw0NTguNSBDODQ2LDQ1Ny4xMTkyODggODQ3LjExOTI4OCw0NTYgODQ4LjUsNDU2IEM4NDkuODgwNzEyLDQ1NiA4NTEsNDU3LjExOTI4OCA4NTEsNDU4LjUgQzg1MSw0NTkuODgwNzEyIDg0OS44ODA3MTIsNDYxIDg0OC41LDQ2MSBaIj48L3BhdGg+DQogICAgPC9nPg0KPC9zdmc+');
+
+// Content
+$p1-content-size: 75%;
+$slide-edge-width: 9.2rem;
+
+// Dia images
+$p1-dia-img-zoom-fullscreen: 1;
+$p1-dia-img-zoom-medium: 0.75;
+$p1-dia-img-zoom-small: 0.5;
+
+// Image scaling
+$p1-image-scaled-small: 50%;
+$p1-image-scaled-medium: 75%;
+
+// Instruction manual
+$instruction-manual-width: 128rem;
+$instruction-manual-height: 72rem;
