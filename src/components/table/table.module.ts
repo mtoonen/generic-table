@@ -5,6 +5,8 @@ import { NgModule } from '@angular/core';
 
 import { ColumnDirective } from './column/column.directive';
 import { TableComponent } from './table/table.component';
+import {MatIconModule} from "@angular/material/icon";
+import {ComponentsModule} from "../components.module";
 
 
 @NgModule({
@@ -14,7 +16,9 @@ import { TableComponent } from './table/table.component';
   ],
   imports: [
     CommonModule,
-    CdkTableModule
+    CdkTableModule,
+    MatIconModule,
+    ComponentsModule
   ],
   exports: [
     TableComponent,

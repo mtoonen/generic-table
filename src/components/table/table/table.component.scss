@@ -1,5 +1,5 @@
-@import 'variables';
-@import 'mixins';
+@import 'src/components/variables';
+@import 'src/components/mixins';
 
 .p1-table {
   background: #fff;
@@ -91,6 +91,7 @@
       &.p1-table-vertical-align-middle {
         vertical-align: middle;
       }
+
     }
 
     // hyperlinks

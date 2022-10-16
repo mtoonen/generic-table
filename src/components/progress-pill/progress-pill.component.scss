@@ -1,0 +1,25 @@
+@import '../variables';
+@import '../mixins';
+
+.progress-pill {
+  background: rgb(170 179 189 / 0.3);
+  border-radius: $p1-gutter-size-small;
+  display: flex;
+  flex-direction: row;
+  height: 1.6rem;
+  margin: 0.8rem 0;
+  overflow: hidden;
+  width: 22.2rem;
+
+  .ok {
+    background: $p1-feedback-incomplete-color;
+  }
+
+  .bad {
+    background: $p1-feedback-incorrect-color;
+  }
+
+  .good {
+    background: $p1-feedback-correct-color;
+  }
+}

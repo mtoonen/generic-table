@@ -371,6 +371,117 @@
             "templateData": ""
         },
         {
+            "name": "IconComponent",
+            "id": "component-IconComponent-42bd85d63def2fe0541b11ab68bd8c0003f30e29b8c2993e5ee994c01f4c133ed95a109d484d14d6ccffa117608ba34f7520c49b85baa02f40be3e1e7690b001",
+            "file": "src/components/icon/icon.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "eb-icon",
+            "styleUrls": [
+                "./icon.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./icon.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 12,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'eb-icon',\n  templateUrl: './icon.component.html',\n  styleUrls: ['./icon.component.scss']\n})\nexport class IconComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./icon.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<p>icon works!</p>\n"
+        },
+        {
+            "name": "ProgressPillComponent",
+            "id": "component-ProgressPillComponent-5659cc96b0cf4b49be2d053553f287efc60d2ded5e1a4a733ad5e83ab0b8d65ccab462cd02785696b150837a63ade0b5bcfa5c1bc9dbedf03c7676964e4d3d68",
+            "file": "src/components/progress-pill/progress-pill.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "p1-progress-pill",
+            "styleUrls": [
+                "./progress-pill.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./progress-pill.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "score",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 13,
+                    "type": "ProgressPillScore",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input } from '@angular/core';\nimport {ProgressPillScore} from \"../table/data\";\n\n\n@Component({\n  selector: 'p1-progress-pill',\n  templateUrl: './progress-pill.component.html',\n  styleUrls: ['./progress-pill.component.scss']\n})\nexport class ProgressPillComponent {\n\n  @Input()\n  public score: ProgressPillScore;\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "@import 'variables';\n@import 'mixins';\n\n.progress-pill {\n  background: rgb(170 179 189 / 0.3);\n  border-radius: $p1-gutter-size-small;\n  display: flex;\n  flex-direction: row;\n  height: 1.6rem;\n  margin: 0.8rem 0;\n  overflow: hidden;\n  width: 22.2rem;\n\n  .ok {\n    background: $p1-feedback-incomplete-color;\n  }\n\n  .bad {\n    background: $p1-feedback-incorrect-color;\n  }\n\n  .good {\n    background: $p1-feedback-correct-color;\n  }\n}\n",
+                    "styleUrl": "./progress-pill.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "<div class=\"progress-pill\">\n  <div [style.flex]=\"score.good\" class=\"good\"></div>\n  <div [style.flex]=\"score.ok\" class=\"ok\"></div>\n  <div [style.flex]=\"score.bad\" class=\"bad\"></div>\n</div>\n"
+        },
+        {
             "name": "TableComponent",
             "id": "component-TableComponent-aaee28c47ca8589e9ce3ce2465d6bbf087d7d8e1a09fbad35c8907f2443903823c0f3b2e32394224617473c3f06b2626098aa24a15c528e813bfc911221b8fec",
             "file": "src/components/table/table/table.component.ts",
@@ -551,7 +662,7 @@
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": "@import 'variables';\n\nth {\n  text-align: left;\n}\n\n.p1-table {\n  border-radius: $p1-gutter-size-small $p1-gutter-size-small 0 0;\n  margin: 0;\n  padding: 0;\n  width: 100%;\n\n  tr {\n    height: 6rem;\n\n    td.name {\n      padding-left: 0;\n\n      .inner {\n        display: flex;\n        justify-content: space-between;\n      }\n    }\n\n    th.title {\n      font-weight: 600;\n      padding-left: 0;\n    }\n\n    .checkbox {\n      margin-right: 1.3rem;\n      width: 1rem;\n    }\n  }\n\n  .status {\n    display: flex;\n    justify-content: center;\n    padding: 0 $p1-gutter-size-small;\n\n    &.active {\n      background-color: $p1-active-period-color;\n      color: $p1-white-color;\n    }\n\n    &.inactive {\n      color: #000;\n      opacity: 0.3;\n    }\n\n    span {\n      font-size: 1.5rem;\n      font-stretch: normal;\n      letter-spacing: normal;\n      line-height: 2;\n    }\n  }\n}\n",
+                    "data": "@import 'variables';\n@import 'mixins';\n\n.p1-table {\n  background: #fff;\n  border-radius: $p1-radius-small;\n  font-size: 1.8rem;\n  margin: $p1-gutter-size;\n  overflow: auto;\n\n  // cross component solution\n  .select-student .button-area {\n    padding: 1.6rem 0 !important;\n  }\n\n  table {\n    width: 100%;\n\n    th {\n      vertical-align: middle;\n    }\n\n    td {\n      vertical-align: top;\n      background: #fff;\n    }\n\n    th,\n    td {\n      padding: $p1-gutter-size;\n      text-align: left;\n\n      // td th util classes\n      &.p1-table-bold {\n        font-weight: 600;\n      }\n\n      &.p1-table-primary-column {\n        min-width: 30rem;\n        width: 30rem;\n      }\n\n      &.p1-table-primary-column-large {\n        min-width: 60rem;\n        width: 60rem;\n      }\n\n      &.p1-table-column-medium {\n        min-width: 20rem;\n        width: 20rem;\n      }\n\n      &.p1-table-spacer {\n        width: 100%;\n      }\n\n      &.p1-table-separator {\n        border-left: $p1-table-border;\n      }\n\n      &.p1-table-center {\n        text-align: center;\n      }\n\n      &.p1-table-right {\n        text-align: right;\n      }\n\n      &.p1-table-sort {\n        cursor: pointer;\n        font-weight: 600;\n        white-space: nowrap;\n      }\n\n      &.p1-table-nowrap {\n        white-space: nowrap;\n      }\n\n      &.p1-table-narrow {\n        padding: $p1-gutter-size-small ($p1-gutter-size-small * 0.5);\n      }\n\n      &.p1-table-no-padding {\n        padding: 0;\n      }\n\n      &.p1-table-pointer {\n        cursor: pointer;\n      }\n\n      &.p1-table-vertical-align-middle {\n        vertical-align: middle;\n      }\n    }\n\n    // hyperlinks\n    a {\n      color: $p1-content-color;\n    }\n\n    // borders\n    thead tr:first-child {\n      th,\n      td {\n        border-bottom: $p1-table-border;\n      }\n\n      th {\n        white-space: nowrap;\n      }\n    }\n\n    tbody tr {\n      overflow: hidden;\n\n      &.p1-table-subtitle {\n        font-size: 1.6rem;\n        font-weight: 600;\n        text-transform: uppercase;\n\n        td {\n          padding: 0.8rem 1.6rem;\n        }\n      }\n\n      th,\n      td {\n        border-bottom: $p1-table-border;\n      }\n\n      &:last-child td,\n      &:last-child th {\n        border-bottom: none;\n      }\n\n      // link-button\n      .p1-table-link-button {\n        cursor: pointer;\n        display: flex;\n        flex-direction: row;\n        text-decoration: none;\n\n        span {\n          flex: 1;\n        }\n      }\n\n      // link-button with extra click space\n      .p1-table-no-padding .p1-table-link-button {\n        padding: $p1-gutter-size;\n      }\n    }\n  }\n\n  // table icons\n  eb-icon {\n    @include p1-size(2.4rem);\n    fill: $p1-content-color;\n    min-width: 2.4rem;\n    transition: transform 0.1s ease-in-out;\n    vertical-align: top;\n\n    &.flip {\n      transform: rotate(180deg);\n    }\n\n    &.inactive {\n      fill: $p1-disabled-color;\n    }\n\n    &.header-icon-with-text {\n      padding-right: $p1-gutter-size-small * 0.5;\n    }\n\n    &.align-bottom {\n      vertical-align: bottom;\n    }\n  }\n\n  p1-task-icon {\n    @include p1-size(2.4rem);\n  }\n\n  // sticky columns\n  &.p1-table-fixed-first-column {\n    tbody tr {\n      border-top: none;\n    }\n\n    tbody td {\n      border-top: $p1-table-border;\n    }\n\n    td:first-child,\n    th:first-child {\n      background: #fff;\n      border-bottom-left-radius: $p1-radius-small;\n      border-top-left-radius: $p1-radius-small;\n      left: 0;\n      position: sticky;\n      z-index: 2;\n    }\n\n    &.scrolled {\n      td:first-child,\n      th:first-child {\n        border-top-color: #fff;\n        box-shadow: 0.3rem 0.3rem 0.6rem 0 rgba(0, 0, 0, 0.1);\n      }\n    }\n  }\n}\n",
                     "styleUrl": "./table.component.scss"
                 }
             ],
@@ -568,19 +679,19 @@
                 "OnInit",
                 "AfterContentInit"
             ],
-            "templateData": "<div class='p1-table'>\n  <table cdk-table [dataSource]='dataSource'>\n    <ng-container *ngFor='let column of columns' cdkColumnDef='{{column.name}}'>\n      <th cdk-header-cell *cdkHeaderCellDef>\n        <span (click)=\"changeSort(column.name)\" >\n        <!--eb-icon *ngIf='column.sortable'\n                 [class.flip]='isAscending(column.name)'\n                 [class.inactive]=\"currentSortColumn !== column.name\"\n                 name='arrow-down-with-stick'>\n        </eb-icon-->\n        {{column.title}}\n          </span>\n      </th>\n      <td cdk-cell *cdkCellDef='let element'>\n        <ng-container *ngTemplateOutlet='column.template;context:{data: element[column.name]}'>as</ng-container>\n      </td>\n    </ng-container>\n\n    <tr cdk-header-row *cdkHeaderRowDef='this.displayColumns'></tr>\n    <tr cdk-row *cdkRowDef='let row; columns: displayColumns;'></tr>\n  </table>\n</div>\n"
+            "templateData": "<div class='p1-table'>\n  <table cdk-table [dataSource]='dataSource'>\n    <ng-container *ngFor='let column of columns' cdkColumnDef='{{column.name}}'>\n      <th cdk-header-cell *cdkHeaderCellDef>\n        <span (click)=\"changeSort(column.name)\" >\n          <mat-icon>home</mat-icon>\n        <!--eb-icon *ngIf='column.sortable'\n                 [class.flip]='isAscending(column.name)'\n                 [class.inactive]=\"currentSortColumn !== column.name\"\n                 name='arrow-down-with-stick'>\n        </eb-icon-->\n        {{column.title}}\n          </span>\n      </th>\n      <td cdk-cell *cdkCellDef='let element'>\n        <ng-container *ngTemplateOutlet='column.template;context:{data: element[column.name]}'>as</ng-container>\n      </td>\n    </ng-container>\n\n    <tr cdk-header-row *cdkHeaderRowDef='this.displayColumns'></tr>\n    <tr cdk-row *cdkRowDef='let row; columns: displayColumns;'></tr>\n  </table>\n</div>\n"
         }
     ],
     "modules": [
         {
             "name": "AppModule",
-            "id": "module-AppModule-2ec58e7a32463b9b6cd970cb31e08e29029a47873b1b978b2bb334fc7975f6f5b3557f06f1d8edb8d9117c1bc37b26d4301c2a5e8ccced6f4a56dde5c6a98af4",
+            "id": "module-AppModule-e4504803f7ac7606d65b7be85637b4bd331b440be161e78d6ea70d6ed3da3442be4af41d35d68c126b34869feffcdd9476ab6bd02e120e77ef2953f329ff0337",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "src/app/app.module.ts",
             "methods": [],
-            "sourceCode": "import { NgModule } from '@angular/core';\nimport { BrowserModule } from '@angular/platform-browser';\n\nimport { AppComponent } from './app.component';\n\n@NgModule({\n  declarations: [\n    AppComponent\n  ],\n  imports: [\n    BrowserModule\n  ],\n  providers: [],\n  bootstrap: [AppComponent]\n})\nexport class AppModule { }\n",
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { BrowserModule } from '@angular/platform-browser';\n\nimport { AppComponent } from './app.component';\nimport { BrowserAnimationsModule } from '@angular/platform-browser/animations';\n\n@NgModule({\n  declarations: [\n    AppComponent\n  ],\n  imports: [\n    BrowserModule,\n    BrowserAnimationsModule\n  ],\n  providers: [],\n  bootstrap: [AppComponent]\n})\nexport class AppModule { }\n",
             "children": [
                 {
                     "type": "providers",
@@ -618,13 +729,13 @@
         },
         {
             "name": "ComponentsModule",
-            "id": "module-ComponentsModule-28cc13558480f2e99470ec74f7f2cf14e8f1fa1a49fc67dfaabe9547bdec7c3f247d58e9f8cecc5aeb6ae463a81e70ca530370864b58b5931a3ae7b3c054c90a",
+            "id": "module-ComponentsModule-7fc4decbff1ebc07913a5519cf867abd1fbc74bc5c2fff4890d193c92fe4ae66593826db23cb595ad8f6e27f6635589245b0be9affb68d7cfe9ad3c97e0a7bb0",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "src/components/components.module.ts",
             "methods": [],
-            "sourceCode": "import { NgModule } from '@angular/core';\nimport { CommonModule } from '@angular/common';\n\n\n\n@NgModule({\n  declarations: [],\n  imports: [\n    CommonModule\n  ]\n})\nexport class ComponentsModule { }\n",
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { CommonModule } from '@angular/common';\nimport { IconComponent } from './icon/icon.component';\nimport { ProgressPillComponent } from './progress-pill/progress-pill.component';\n\n\n\n@NgModule({\n  declarations: [\n    IconComponent,\n    ProgressPillComponent\n  ],\n  imports: [\n    CommonModule\n  ]\n})\nexport class ComponentsModule { }\n",
             "children": [
                 {
                     "type": "providers",
@@ -632,7 +743,14 @@
                 },
                 {
                     "type": "declarations",
-                    "elements": []
+                    "elements": [
+                        {
+                            "name": "IconComponent"
+                        },
+                        {
+                            "name": "ProgressPillComponent"
+                        }
+                    ]
                 },
                 {
                     "type": "imports",
@@ -654,13 +772,13 @@
         },
         {
             "name": "TableModule",
-            "id": "module-TableModule-9caa33914f68ad02c3cb29e22c70dbdf7e74c01d7001ac9070c8cd304aa936c6b0a4ed62453e6675f98b6c7766d64cd7290527eb930f7ce1dea129fc16af9374",
+            "id": "module-TableModule-fb2db269bb5ea21ec7527e525347832c78073dbb1e4b3d54d79112421d60a0d537a817ea43e0d5f16aed51eada6560a581a5b7cfca129e109d80ded41765ebd3",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "src/components/table/table.module.ts",
             "methods": [],
-            "sourceCode": "import { CdkTableModule } from '@angular/cdk/table';\nimport { CommonModule } from '@angular/common';\nimport { NgModule } from '@angular/core';\n\n\nimport { ColumnDirective } from './column/column.directive';\nimport { TableComponent } from './table/table.component';\n\n\n@NgModule({\n  declarations: [\n    TableComponent,\n    ColumnDirective,\n  ],\n  imports: [\n    CommonModule,\n    CdkTableModule\n  ],\n  exports: [\n    TableComponent,\n    ColumnDirective,\n  ]\n})\nexport class TableModule { }\n",
+            "sourceCode": "import { CdkTableModule } from '@angular/cdk/table';\nimport { CommonModule } from '@angular/common';\nimport { NgModule } from '@angular/core';\n\n\nimport { ColumnDirective } from './column/column.directive';\nimport { TableComponent } from './table/table.component';\nimport {MatIconModule} from \"@angular/material/icon\";\n\n\n@NgModule({\n  declarations: [\n    TableComponent,\n    ColumnDirective,\n  ],\n    imports: [\n        CommonModule,\n        CdkTableModule,\n        MatIconModule\n    ],\n  exports: [\n    TableComponent,\n    ColumnDirective,\n  ]\n})\nexport class TableModule { }\n",
             "children": [
                 {
                     "type": "providers",
@@ -965,7 +1083,7 @@
     },
     "routes": [],
     "coverage": {
-        "count": 3,
+        "count": 2,
         "status": "low",
         "files": [
             {
@@ -973,6 +1091,24 @@
                 "type": "component",
                 "linktype": "component",
                 "name": "AppComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/components/icon/icon.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "IconComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/components/progress-pill/progress-pill.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ProgressPillComponent",
                 "coveragePercent": 0,
                 "coverageCount": "0/2",
                 "status": "low"
