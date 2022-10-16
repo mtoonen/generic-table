@@ -23,7 +23,7 @@ export class TableComponent<T> implements OnInit, AfterContentInit {
   displayColumns: string[];
 
   currentSortColumn: string;
-  sortAscending: Map<string, boolean> = new Map<string, boolean>();
+  sortAscending = new Map<string, boolean>();
 
   constructor() {
   }

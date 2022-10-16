@@ -3,11 +3,11 @@
     <ng-container *ngFor='let column of columns' cdkColumnDef='{{column.name}}'>
       <th cdk-header-cell *cdkHeaderCellDef>
         <span (click)="changeSort(column.name)" >
-        <!--eb-icon *ngIf='column.sortable'
-                 [class.flip]='isAscending(column.name)'
+        <eb-icon *ngIf='column.sortable'
+                 [class.flip]='true'
                  [class.inactive]="currentSortColumn !== column.name"
                  name='arrow-down-with-stick'>
-        </eb-icon-->
+        </eb-icon>
         {{column.title}}
           </span>
       </th>

@@ -5,5 +5,10 @@ layout
 Filtering
 searching
 pagination
+styling
+  via directives?
+  via styleobjecten
+  default classes
+declarative vs programmatic
 horizontaal kunnen scrollen
   een kolom vast kunnen zetten

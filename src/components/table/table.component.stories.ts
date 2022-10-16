@@ -6,6 +6,8 @@ import { Meta, moduleMetadata, Story } from '@storybook/angular';
 import { CHILDREN_DATA, ELEMENT_DATA, PeriodicElement, StudentResult } from './data';
 import { TableComponent } from './table/table.component';
 import {TableModule} from "./table.module";
+import { MatIconModule } from '@angular/material/icon';
+import {ComponentsModule} from "../components.module";
 
 
 export default {
@@ -15,7 +17,9 @@ export default {
     moduleMetadata({
       imports: [
         CdkTableModule,
+        ComponentsModule,
         TableModule,
+        MatIconModule,
       ]
     })
   ],
