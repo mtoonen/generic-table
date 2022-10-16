@@ -1,0 +1,4 @@
+@mixin p1-size($width, $height: $width) {
+  height: $height;
+  width: $width;
+}
